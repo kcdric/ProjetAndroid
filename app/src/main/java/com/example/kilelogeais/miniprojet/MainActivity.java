@@ -1,7 +1,3 @@
-/* Cédric KI & Cédric Le Logeais
-* Projet Android
-* IMR3
-* */
 
 /* Fait par Cédric KI & Cédric LE LOGEAIS
 * IMR3 2018-2019
