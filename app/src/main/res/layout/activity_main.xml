@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kilelogeais.miniprojet.MainActivity">
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/HorizontalGuideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/buffering_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:text="@string/buffering_string"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/HorizontalGuideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/HorizontalGuideline2"
+        app:layout_constraintVertical_bias="0.125" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/HorizontalGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <GridLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="357dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:columnCount="1"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HorizontalGuideline2"
+        app:layout_constraintVertical_bias="0.478">
+
+
+        <Button
+            android:id="@+id/buttonBigBuck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0C"
+            android:tag="Big Buck"
+            android:text="Big Buck" />
+
+        <Button
+            android:id="@+id/buttonPlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0C"
+            android:tag="Plot"
+            android:text="Plot" />
+
+        <Button
+            android:id="@+id/buttonProduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0C"
+            android:tag="Production"
+            android:text="Production" />
+
+        <Button
+            android:id="@+id/buttonRelease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0C"
+            android:tag="Release"
+            android:text="Release" />
+
+        <Button
+            android:id="@+id/buttonCharacters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0C"
+            android:tag="Characters"
+            android:text="Characters" />
+
+        <Button
+            android:id="@+id/buttonSeeAlso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C0C"
+            android:tag="See also"
+            android:text="See also" />
+
+    </GridLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.35" />
+
+
+</android.support.constraint.ConstraintLayout>
